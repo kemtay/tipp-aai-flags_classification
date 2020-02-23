@@ -1,6 +1,31 @@
 # tipp-aai-flags_classification
 To select the best model to classify the “religion” of a country based on its flag colours and shapes.
 
+## Prerequisites
+The below Python modules are required :
+
+1. Python built-in modules: re, compress (itertools package)
+2. Python libraries for data science: numpy, pandas
+3. Python libraries for data visualization : matplotlib.pyplot, seaborn 
+4. Python libraries for machine learning: scikit-learn
+- sklearn.model_selection import train_test_split
+- sklearn.naive_bayes import BernoulliNB, MultinomialNB
+- sklearn.tree import DecisionTreeClassifier, plot_tree
+- sklearn.neighbors import KNeighborsClassifier
+- sklearn.svm import LinearSVC
+- sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+- sklearn.preprocessing import OneHotEncoder, LabelEncoder, Binarizer
+- sklearn.feature_selection import RFE
+- sklearn.model_selection import train_test_split, StratifiedShuffleSplit, GridSearchCV
+- sklearn.model_selection import cross_validate, cross_val_score, validation_curve
+- sklearn.metrics import confusion_matrix, accuracy_score, roc_auc_score, classification_report
+
+
+## Python files explained:
+1. flag_prediction.py - the main python program
+2. FlagsClassifier.py - the definitions of class Flags (import FlagsClassifier as fclf)
+3. ml_plot.py - all the Machine Learning plots used in the application (import ml_plot as mplt)
+
 ## Dataset
 - The dataset used is flag.data from https://archive.ics.uci.edu/ml/machine-learning-databases/flags .
 - The selected target is religion. There are 7 religions, hence this a multi-class classification.
